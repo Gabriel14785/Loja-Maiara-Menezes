@@ -1,0 +1,73 @@
+<!-- ANNOUNCEMENT BAR -->
+<div class="w-full bg-primary-container text-on-primary-container">
+<div class="mx-auto max-w-[1440px] px-gutter lg:px-gutter-desktop py-2 text-center text-label-sm font-label-sm tracking-widest uppercase">
+      Novidades toda semana &middot; Roupas country femininas &middot; Gonzaga - MG
+    </div>
+</div>
+<!-- TOP APP BAR -->
+<header class="w-full sticky top-0 z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant shadow-sm">
+<div class="mx-auto max-w-[1440px] px-gutter lg:px-gutter-desktop flex items-center justify-between gap-space-md h-16 lg:h-20">
+<!-- Brand -->
+<a class="flex flex-col shrink-0" href="#inicio">
+<span class="text-headline-sm font-headline-sm tracking-wider uppercase text-primary leading-none">LOJA Maiara Menezes</span>
+<span class="hidden sm:block text-label-sm font-label-sm text-secondary tracking-widest uppercase">Roupas Country Femininas</span>
+</a>
+<!-- Desktop Nav -->
+<nav class="hidden lg:flex items-center gap-space-lg xl:gap-space-xl">
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md" href="#inicio">Início</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="#colecao">Categorias</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="#loja">Loja</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="#a-loja">A Loja</a>
+<a class="text-on-surface-variant hover:text-primary font-label-md text-label-md transition-colors" href="#contato">Contato</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-space-sm">
+<div class="hidden xl:flex items-center gap-space-xs px-space-md py-1.5 bg-surface-container rounded border border-outline-variant text-on-surface-variant text-label-sm font-label-sm">
+<svg class="w-3.5 h-3.5 text-primary-container" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg>
+<span>Atendimento 8h &amp; 18h</span>
+</div>
+<a class="hidden lg:inline-flex items-center gap-space-xs px-space-lg py-2.5 bg-primary-container text-surface hover:bg-primary transition-all duration-200 rounded text-label-md font-label-md tracking-wider uppercase shadow-sm active:scale-95" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener" target="_blank">
+<svg class="w-4 h-4 text-surface" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+<span>Ver Instagram</span>
+</a>
+<a class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-outline-variant text-primary-container hover:bg-surface-container transition-colors" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener" target="_blank" aria-label="Instagram da loja">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+</a>
+<button id="menuToggle" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-outline-variant text-primary-container hover:bg-surface-container transition-colors cursor-pointer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuMobile">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
+</div>
+</div>
+<!-- MOBILE MENU -->
+<div id="menuMobile" class="lg:hidden hidden border-t border-outline-variant bg-surface max-h-[calc(100vh-4rem)] overflow-y-auto">
+<nav class="px-gutter py-space-lg flex flex-col gap-space-lg">
+<div class="flex flex-col">
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-lg text-label-lg" href="#inicio">Início</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-lg text-label-lg" href="#colecao">Categorias</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-lg text-label-lg" href="#loja">Loja</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-lg text-label-lg" href="#a-loja">A Loja</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-lg text-label-lg" href="#contato">Contato</a>
+</div>
+<div>
+<span class="text-label-sm font-label-sm text-secondary uppercase tracking-widest block mb-space-sm">Comprar por categoria</span>
+<div class="flex flex-wrap gap-space-sm">
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="vestidos">Vestidos</a>
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="blusas">Blusas</a>
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="calcas">Calças</a>
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="botas">Botas</a>
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="chapeus">Chapéus</a>
+<a class="px-space-md py-1.5 rounded-full border border-outline-variant text-label-md font-label-md text-on-surface-variant hover:border-primary-container hover:text-primary transition-colors" href="#loja" data-cat="acessorios">Acessórios</a>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs pt-space-md border-t border-outline-variant text-label-md font-label-md text-on-surface-variant">
+<span class="inline-flex items-center gap-space-xs"><svg class="w-4 h-4 text-primary-container" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><polyline points="12 7 12 12 15 15"></polyline></svg> Atendimento das 8h &amp; 18h</span>
+<span class="inline-flex items-center gap-space-xs"><svg class="w-4 h-4 text-primary-container" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Gonzaga - Minas Gerais</span>
+<span class="inline-flex items-center gap-space-xs"><svg class="w-4 h-4 text-primary-container" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg> @loja_maiaramenezes</span>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-xl py-3 bg-primary-container text-surface rounded-full text-label-lg font-label-lg uppercase tracking-wider active:scale-95" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener" target="_blank">
+<svg class="w-4 h-4 text-surface" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg>
+      Ver no Instagram
+    </a>
+</nav>
+</div>
+</header>

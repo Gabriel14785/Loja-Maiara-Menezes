@@ -16,3 +16,23 @@ html, body { overflow-x: hidden; }
   .text-headline-xl { font-size: 1.9rem !important; line-height: 2.3rem !important; }
   .text-headline-lg { font-size: 1.6rem !important; line-height: 2.1rem !important; }
 }
+
+/* ===== Cards de categoria compactos no mobile ===== */
+@media (max-width: 767px) {
+  [data-cat] { padding: 0.75rem !important; }
+  [data-cat] .aspect-\[3\/4\] { aspect-ratio: 1 / 1 !important; }
+  [data-cat] h3 { font-size: 1.1rem !important; line-height: 1.3 !important; margin-bottom: 0.1rem !important; }
+  [data-cat] p { display: none !important; }
+  [data-cat] .pt-space-md { padding-top: 0.5rem !important; }
+  [data-cat] .mt-space-md { margin-top: 0.5rem !important; }
+  [data-cat] .mb-space-lg { margin-bottom: 0.6rem !important; }
+  [data-cat] .mb-space-md { margin-bottom: 0.6rem !important; }
+  [data-cat] .mb-space-xs { margin-bottom: 0.1rem !important; }
+}
+
+/* ===== Loja: grade e chips no mobile ===== */
+@media (max-width: 767px) {
+  #filtros { gap: 0.4rem !important; }
+  #filtros button { padding-left: 0.7rem !important; padding-right: 0.7rem !important; padding-top: 0.35rem !important; padding-bottom: 0.35rem !important; }
+  #gradeProdutos { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 0.75rem !important; }
+}
