@@ -149,12 +149,30 @@
   }
 
   function buildMensagem() {
-    var l = ["Olá! Quero fazer um pedido na Loja Maiara Menezes:", ""];
-    cart.forEach(function (it) {
-      l.push("• " + it.qty + "x " + (it.nome || "Peça (nome em breve)") + (it.preco != null ? " — R$ " + fmt(it.preco) : " — preço a combinar"));
+    var comPreco = cart.filter(function (it) { return it.preco != null; });
+    var semPreco = cart.filter(function (it) { return it.preco == null; });
+    var l = [];
+    l.push("*PEDIDO — Loja Maiara Menezes*");
+    l.push("");
+    l.push("Olá! Gostaria de fazer este pedido:");
+    l.push("");
+    cart.forEach(function (it, i) {
+      var nome = it.nome || "Peça a definir";
+      l.push((i + 1) + ". *" + it.qty + "x " + nome + "*");
+      l.push(it.preco != null
+        ? "   R$ " + fmt(it.preco) + " cada  ·  Subtotal: R$ " + fmt(it.preco * it.qty)
+        : "   Valor a combinar");
+      l.push("");
     });
-    if (temPreco()) l.push("", "Total: R$ " + fmt(totalCart()));
-    l.push("", "Aguardo a confirmação do pedido. Obrigado(a)!");
+    if (semPreco.length === 0) {
+      l.push("*TOTAL: R$ " + fmt(totalCart()) + "*");
+    } else if (comPreco.length === 0) {
+      l.push("*TOTAL: a combinar*");
+    } else {
+      l.push("*SUBTOTAL: R$ " + fmt(totalCart()) + "*  (+ " + semPreco.length + " item(ns) a combinar)");
+    }
+    l.push("");
+    l.push("Aguardo a confirmação. Obrigado(a)!");
     return l.join("\n");
   }
   function buildWaHref() {
