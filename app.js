@@ -127,3 +127,26 @@
   renderFiltros();
   renderGrade();
 })();
+
+// ===== Menu mobile (o Stitch nao tinha) =====
+(function () {
+  var toggle = document.getElementById("menuToggle");
+  var menu = document.getElementById("menuMobile");
+  if (!toggle || !menu) return;
+
+  function setOpen(open) {
+    menu.classList.toggle("hidden", !open);
+    toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+  }
+
+  toggle.addEventListener("click", function () {
+    setOpen(menu.classList.contains("hidden"));
+  });
+  menu.addEventListener("click", function (e) {
+    if (e.target.closest("a")) setOpen(false);
+  });
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 1024 && !menu.classList.contains("hidden")) setOpen(false);
+  });
+})();

@@ -43,7 +43,7 @@
 <body class="bg-surface text-on-surface antialiased selection:bg-surface-variant selection:text-primary">
 <!-- TOP APP BAR -->
 <header class="w-full sticky top-0 z-50 bg-surface border-b border-outline-variant shadow-sm backdrop-blur-md bg-opacity-95">
-<div class="w-full px-gutter-desktop mx-auto max-w-[1440px] flex items-center justify-between h-20">
+<div class="w-full px-gutter lg:px-gutter-desktop mx-auto max-w-[1440px] flex items-center justify-between gap-space-md h-16 lg:h-20">
 <!-- Brand Logo Anchor -->
 <a class="flex flex-col group" href="#inicio">
 <span class="text-headline-sm font-headline-sm tracking-wider uppercase text-primary transition-colors duration-200">
@@ -54,7 +54,7 @@
         </span>
 </a>
 <!-- Desktop Navigation Links -->
-<nav class="hidden md:flex items-center gap-space-xl">
+<nav class="hidden lg:flex items-center gap-space-xl">
 <a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md transition-all duration-200" href="#inicio">
           Início
         </a>
@@ -79,15 +79,27 @@
 <span>Atendimento das 8h às 18h</span>
 </div>
 <!-- Instagram CTA -->
-<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 bg-primary-container text-surface hover:bg-primary transition-all duration-200 rounded text-label-md font-label-md tracking-wider uppercase shadow-sm active:scale-95" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-2.5 bg-primary-container text-surface hover:bg-primary transition-all duration-200 rounded text-label-md font-label-md tracking-wider uppercase shadow-sm active:scale-95" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4 text-surface" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
 <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
 <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
 </svg>
-<span>Ver Instagram</span>
+<span class="hidden sm:inline">Ver Instagram</span>
 </a>
+<button id="menuToggle" type="button" class="lg:hidden inline-flex items-center justify-center w-10 h-10 rounded border border-outline-variant text-primary-container hover:bg-surface-container transition-colors cursor-pointer" aria-label="Abrir menu" aria-expanded="false" aria-controls="menuMobile">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+</button>
 </div>
+</div>
+<div id="menuMobile" class="lg:hidden hidden border-t border-outline-variant bg-surface">
+<nav class="px-gutter py-space-md flex flex-col">
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-md text-label-md" href="#inicio">Início</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-md text-label-md" href="#colecao">Coleção</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-md text-label-md" href="#a-loja">A Loja</a>
+<a class="py-space-sm border-b border-outline-variant text-on-surface font-label-md text-label-md" href="#contato">Contato</a>
+<a class="py-space-sm text-secondary font-label-md text-label-md" href="https://www.instagram.com/loja_maiaramenezes/" target="_blank" rel="noopener">Ver Instagram</a>
+</nav>
 </div>
 </header>
 <!-- MAIN CANVAS -->
@@ -117,7 +129,7 @@
             </p>
 <!-- CTA Buttons Cluster -->
 <div class="flex flex-wrap items-center gap-space-md">
-<a class="px-space-xl py-3.5 bg-tertiary-container hover:bg-tertiary text-on-tertiary text-label-lg font-label-lg rounded transition-all duration-200 uppercase tracking-widest shadow-md inline-flex items-center gap-space-xs active:scale-95" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<a class="px-space-xl py-3.5 bg-tertiary-container hover:bg-tertiary text-on-tertiary text-label-lg font-label-lg rounded transition-all duration-200 uppercase tracking-widest shadow-md inline-flex items-center gap-space-xs active:scale-95" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4 text-on-tertiary" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
 <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -545,7 +557,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant mb-space-xl leading-relaxed">
                 Fique por dentro das novidades da semana, bastidores de Gonzaga, dicas de combinações e novidades exclusivas divulgadas primeiro no feed e nos stories.
               </p>
-<a class="px-space-xl py-3.5 bg-primary-container hover:bg-primary text-surface text-label-lg font-label-lg rounded uppercase tracking-widest transition-all duration-200 inline-flex items-center gap-space-xs shadow-sm" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<a class="px-space-xl py-3.5 bg-primary-container hover:bg-primary text-surface text-label-lg font-label-lg rounded uppercase tracking-widest transition-all duration-200 inline-flex items-center gap-space-xs shadow-sm" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener noreferrer" target="_blank">
 <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.75" viewbox="0 0 24 24">
 <rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect>
 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -684,7 +696,7 @@
                 </p>
 </div>
 <div class="pt-space-md mt-space-md border-t border-outline-variant">
-<a class="text-label-sm font-label-sm text-primary font-semibold hover:underline" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<a class="text-label-sm font-label-sm text-primary font-semibold hover:underline" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener noreferrer" target="_blank">
                   Ver Perfil →
                 </a>
 </div>
@@ -761,7 +773,7 @@
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="#colecao">Coleção</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="#a-loja">A Loja</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors" href="#contato">Contato</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="https://www.instagram.com/loja_maiaramenezes/" rel="noopener noreferrer" target="_blank">Instagram</a>
 <span class="text-secondary font-medium">Gonzaga - MG</span>
 </nav>
 <!-- Copyright Notice -->

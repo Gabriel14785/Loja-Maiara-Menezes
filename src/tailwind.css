@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ===== Correcoes de responsividade (o Stitch saiu desktop-first) ===== */
+html, body { overflow-x: hidden; }
+
+@media (max-width: 1023px) {
+  .px-gutter-desktop { padding-left: 1.25rem !important; padding-right: 1.25rem !important; }
+}
+
+@media (max-width: 767px) {
+  .py-space-3xl { padding-top: 3.25rem !important; padding-bottom: 3.25rem !important; }
+  .mb-space-2xl { margin-bottom: 2.25rem !important; }
+  .text-display-hero { font-size: 2.4rem !important; line-height: 1.08 !important; letter-spacing: -0.01em !important; }
+  .text-headline-xl { font-size: 1.9rem !important; line-height: 2.3rem !important; }
+  .text-headline-lg { font-size: 1.6rem !important; line-height: 2.1rem !important; }
+}
