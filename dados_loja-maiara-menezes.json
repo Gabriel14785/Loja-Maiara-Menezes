@@ -1,0 +1,41 @@
+{
+  "nome": "Loja Maiara Menezes",
+  "nicho": "Roupas country feminina",
+  "cidade": "Gonzaga",
+  "estado": "MG",
+  "endereco_completo": null,
+  "whatsapp": null,
+  "whatsapp_status": "em breve",
+  "horario": "8h às 18h",
+  "horario_dias": null,
+  "instagram": "https://www.instagram.com/loja_maiaramenezes/",
+  "instagram_handle": "@loja_maiaramenezes",
+  "categorias": ["Vestidos", "Blusas", "Calças", "Botas", "Chapéus", "Acessórios"],
+  "fotos": [],
+  "fotos_status": "em breve",
+  "url_final": null,
+  "tom": "country elegante e acolhedor",
+  "estilo": "equilibrado",
+  "paleta": {
+    "cream": "#FAF5EC",
+    "cream_2": "#F3EADB",
+    "brown": "#8A5A3B",
+    "brown_dark": "#5E3B26",
+    "terracotta": "#C0563A",
+    "denim": "#5A6B7B",
+    "blush": "#E8CFC6",
+    "ink": "#2E2016",
+    "muted": "#7A6A5C"
+  },
+  "tipografia": {
+    "titulos": "Cormorant Garamond",
+    "corpo": "Montserrat"
+  },
+  "pendencias": [
+    "Numero do WhatsApp",
+    "Endereco completo (rua/numero/CEP)",
+    "Dias de funcionamento",
+    "Fotos reais de produto",
+    "URL final do site"
+  ]
+}

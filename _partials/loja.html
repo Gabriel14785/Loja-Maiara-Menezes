@@ -1,0 +1,47 @@
+<!-- SECTION 4: LOJA / CATALOGO -->
+<section class="py-space-3xl bg-surface border-b border-outline-variant" id="loja">
+<div class="max-w-[1440px] mx-auto px-gutter-desktop">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<span class="text-label-md font-label-md text-tertiary tracking-widest uppercase mb-space-xs block">
+              A loja
+            </span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+              Nossa coleção
+            </h2>
+</div>
+<span class="text-label-sm font-label-sm text-on-surface-variant bg-surface-container px-space-md py-2 rounded border border-outline-variant">
+            Novidades semanais em Gonzaga - MG
+          </span>
+</div>
+
+<!-- Filtros de categoria -->
+<div id="filtros" class="flex flex-wrap gap-space-sm mb-space-xl" role="group" aria-label="Filtrar por categoria"></div>
+
+<!-- Grade de produtos -->
+<div id="gradeProdutos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg"></div>
+<p id="lojaVazio" class="hidden text-center font-body-md text-body-md text-on-surface-variant py-space-2xl">
+            Novidades chegando. Em breve as peças desta categoria por aqui.
+          </p>
+</div>
+</section>
+
+<!-- MODAL DE PRODUTO -->
+<div id="modalProduto" class="fixed inset-0 z-[60] hidden items-center justify-center p-space-md" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+<div id="modalFundo" class="absolute inset-0 bg-black/50"></div>
+<div class="relative bg-surface border border-outline-variant rounded max-w-md w-full max-h-[90vh] overflow-auto p-space-lg shadow-lg">
+<button id="modalFechar" type="button" class="absolute top-space-sm right-space-sm w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary-container hover:text-surface transition-colors cursor-pointer" aria-label="Fechar">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+<div id="modalMidia" class="aspect-[3/4] w-full bg-surface-variant border border-dashed border-outline-variant rounded mb-space-md flex items-center justify-center p-space-md text-center overflow-hidden">
+<span class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Foto em breve</span>
+</div>
+<span id="modalCategoria" class="text-label-sm font-label-sm text-secondary uppercase tracking-widest block"></span>
+<h3 id="modalTitulo" class="font-headline-md text-headline-md text-on-surface mb-space-xs"></h3>
+<p id="modalDesc" class="font-body-md text-body-md text-on-surface-variant mb-space-md"></p>
+<p id="modalPreco" class="font-headline-sm text-headline-sm text-primary mb-space-lg"></p>
+<a id="modalCta" href="https://www.instagram.com/loja_maiaramenezes/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container font-label-lg text-label-lg px-space-lg py-space-sm rounded-full hover:opacity-90 transition-opacity">
+            Ver no Instagram
+          </a>
+</div>
+</div>
